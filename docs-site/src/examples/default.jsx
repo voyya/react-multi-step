@@ -16,8 +16,7 @@ export default class Default extends React.Component {
         </code>
       </pre>
       <div className="column">
-        <MultiStep
-             />
+        <MultiStep/>
       </div>
     </div>
   }

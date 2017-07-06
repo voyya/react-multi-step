@@ -96,6 +96,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production grunt build",
     "start": "node server.js",
+    "create": "./scripts/create.sh",
     "test": "cross-env NODE_ENV=test grunt travis",
     "eslint": "eslint **/*.jsx",
     "prepublish": "npm run build",
