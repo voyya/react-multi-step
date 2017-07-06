@@ -6,18 +6,11 @@ export default class Default extends React.Component {
     super(props)
   }
 
-  handleChange = (date) => {
-    this.setState({
-      startDate: date
-    })
-  }
-
   render () {
     return <div className="row">
       <pre className="column example__code">
         <code className="jsx">{`
 <MultiStep
-    selected={this.state.startDate}
 />
 `}
         </code>
