@@ -38269,10 +38269,6 @@
 
 	var _reactMultiStep2 = _interopRequireDefault(_reactMultiStep);
 
-	var _moment = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"moment\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _moment2 = _interopRequireDefault(_moment);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38287,18 +38283,7 @@
 	  function Default(props) {
 	    _classCallCheck(this, Default);
 
-	    var _this = _possibleConstructorReturn(this, (Default.__proto__ || Object.getPrototypeOf(Default)).call(this, props));
-
-	    _this.handleChange = function (date) {
-	      _this.setState({
-	        startDate: date
-	      });
-	    };
-
-	    _this.state = {
-	      startDate: (0, _moment2.default)()
-	    };
-	    return _this;
+	    return _possibleConstructorReturn(this, (Default.__proto__ || Object.getPrototypeOf(Default)).call(this, props));
 	  }
 
 	  _createClass(Default, [{
@@ -38313,15 +38298,13 @@
 	          _react2.default.createElement(
 	            'code',
 	            { className: 'jsx' },
-	            '\n<MultiStep\n    selected={this.state.startDate}\n    onChange={this.handleChange}\n/>\n'
+	            '\n<MultiStep\n/>\n'
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'column' },
-	          _react2.default.createElement(_reactMultiStep2.default, {
-	            selected: this.state.startDate,
-	            onChange: this.handleChange })
+	          _react2.default.createElement(_reactMultiStep2.default, null)
 	        )
 	      );
 	    }
